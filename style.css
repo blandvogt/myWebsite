@@ -1,0 +1,299 @@
+@charset "UTF-8";
+
+/*Navbar******************************************************/
+/*Nav Style*/
+.navbar-brand{
+  font-size: 40px;
+  padding-top: 37px;
+  color: orange !important;
+  /* color: #2980B9 !important; */
+  /*font-family: Copperplate, "Copperplate Gothic Light", fantasy;*/
+  font-family: Century Gothic;
+}
+.menu > a{
+  font-size: 19px;
+  margin-top: 20px;
+  color: white !important;
+}
+ul.nav a:hover {
+  color: silver !important;
+}
+
+/*Centers nav*/
+.navbar-inverse .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+.navbar-inverse .navbar-collapse {
+    text-align: right;
+}
+.menu{
+  padding-right: 5px;
+  padding-left: 50px;
+  font-family: Century Gothic;
+}
+.container-fluid{
+  margin: 0px 80px 15px 80px;
+}
+
+/*Extend nav*/
+.navbar-inverse{
+  padding-bottom: 5px;
+  opacity: 0.9;
+}
+
+/*Underline Current*/
+.current > a{
+  border-bottom: 1px solid #4A88DA;
+}
+a:hover{
+  text-decoration: none;
+}
+
+
+/*Home***********************************************/
+body.home{
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-image: url(images/blueCity.jpeg);
+    background-color: black;
+}
+
+.home_text{
+  font-size: 32px;
+  margin: 10px 310px 20px 310px;
+  color: white;
+  text-align: center;
+  font-family: Century Gothic;
+}
+
+ .home_text_welcome{
+   font-size: 110px;
+   margin: 160px 0px 0px 0px;
+   color: white;
+   text-align: center;
+   font-weight: bold;
+   font-family: cursive;
+   text-shadow: 2px 2px black;
+ }
+
+.resume{
+  color: orange;
+}
+
+.resume:hover{
+  color: lightgrey;
+}
+
+/*About***********************************************/
+body.about{
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-image: url(images/whiteCubes.png);
+  background-color: black;
+}
+
+.container_about{
+  font-family: Georgia;
+}
+
+.about_text{
+  font-size: 25px;
+  margin: 30px 80px 30px 30px;
+  color: black;
+  text-align: justify;
+}
+
+.myPic{
+  width: 300px;
+  float: left;
+  margin: 10px 30px 15px 80px;
+  border: 2px solid black;
+}
+
+/*Experience********************************************************************/
+body.experience{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(images/coffee.jpg);
+  background-color: white;
+}
+
+/*Contact*******************************************************************/
+/* body.contact{
+  background-repeat: repeat;
+  background-size:contain;
+  background-image: url(images/whiteCubes.png);
+  background-color: white;
+} */
+
+
+
+
+/*Screen Sizing******************************************************/
+/*For Tablets (Activates if under 1024px)*/
+@media (max-width: 1024px){
+  /*Navbar******************************************************/
+  /*Nav Style*/
+  .navbar-brand{
+    font-size: 32px;
+  }
+  .menu > a{
+    font-size: 16px;
+  }
+
+  /*Centers nav*/
+  .menu{
+    padding-right: 0px;
+    padding-left: 10px;
+  }
+  .container-fluid{
+    margin: 0px 30px 15px 30px;
+  }
+
+  /*Home***********************************************/
+  .home_text{
+    font-size: 28px;
+    margin: 10px 150px 200px 150px;
+  }
+
+   .home_text_welcome{
+     font-size: 90px;
+   }
+
+  /*About***********************************************/
+  .about_text{
+    font-size: 20px;
+    margin: 0px 30px 0px 30px;
+    color: white;
+    text-align: justify;
+    color: black;
+  }
+  .about_text_large{
+    font-size: 20px;
+    margin: 0px 30px 5px 30px;
+    color: black;
+    text-align: justify;
+  }
+  .about_text_full{
+    font-size: 16px;
+    margin: 0px 30px 30px 30px;
+    color: black;
+    text-align: justify;
+  }
+
+  .myPic{
+    width: 150px;
+    float: left;
+    margin: 0px 30px 5px 30px;
+    border: 1px solid black;
+  }
+}
+
+/*For Phones (Activates if under 767px)*/
+@media (max-width: 767px){
+  /*Navbar******************************************************/
+  /*Nav Style*/
+  .navbar-brand{
+    font-size: 30px;
+    padding-top: 20px;
+    text-align: right !important;
+  }
+
+  .menu > a{
+    font-size: 15px;
+    margin-top: 0px;
+  }
+
+  /*Extend nav*/
+  .navbar-inverse{
+    padding-bottom: 20px;
+    opacity: 1.0;
+    margin-right: -20px;
+  }
+
+  /*Underline Current*/
+  .current > a{
+    border-bottom: none !important;
+    color: grey !important;
+  }
+
+  a:hover{
+    text-decoration: none;
+  }
+
+  body.home{
+    background-repeat:repeat;
+    background-size: cover;
+    background-image: url(images/whiteCubes.png);
+    background-color: white;
+  }
+
+  .container-fluid{
+    margin: 0px 20px 0px 10px;
+  }
+
+  /*About***********************************************/
+
+  .about_text{
+    font-size: 17px;
+    margin: 30px 30px 30px 30px;
+    color: black;
+    text-align: justify;
+    color: black;
+  }
+
+  body.about{
+    background-repeat:repeat;
+    background-size: contain;
+    background-image: url(images/whiteCubes.png);
+    background-color: white;
+  }
+
+  .myPic{
+    width: 150px;
+    float: left;
+    margin: 5px 30px 5px 30px;
+    border: 1px solid black;
+  }
+
+  /*Home***********************************************/
+  .home_text{
+    font-size: 20px;
+    margin: 10px 30px 20px 30px;
+    color: black;
+    text-align: center;
+    font-family: Century Gothic;
+
+  }
+
+   .home_text_welcome{
+     font-size: 50px;
+     margin: 160px 0px 0px 0px;
+     color: black;
+     text-align: center;
+     font-weight: bold;
+     font-family: cursive;
+     text-shadow: none;
+   }
+ }
+
+
+
+
+
+
+///////////////////
+body.contact{
+  background-repeat:repeat;
+  background-size: cover;
+  background-image: url(images/coffee.jpg);
+  background-color: black;
+}
+
+.top{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(images/coffee.jpg);
+  background-color: white;
+}
