@@ -1,41 +1,40 @@
-var today = new Date();
-var hourNow = today.getHours();
-var greeting;
+//Uses an Immediately Invoked Function Expression (IIFE)
+//to protect the scope of variables from other scripts.
+//This IIFE finds the current time of day and creates a
+//unique homepage greeting message and background image.
+(function() {
 
-if (hourNow >= 18){
-    greeting = 'Good Evening';
+  //Object Constructor creating Time Objects, each with a
+  //unique greeting and background image.
+  function Time (greeting, background) {
+    this.greeting = greeting;
+    this.background = background;
   }
-  else if (hourNow >= 12) {
-    greeting = 'Good Afternoon';
+  var morning = new Time ('Morning', 'homeMorning');
+  var afternoon = new Time ('Afternoon', 'homeAfternoon');
+  var evening = new Time ('Evening', 'homeEvening');
+
+  // Finds the correct time of day and its corresponding Time Object
+  function currentTime() {
+    var today = new Date();
+    var hourNow = today.getHours();
+
+    if (hourNow >= 18) {
+        return evening;
+      }
+      else if (hourNow >= 12) {
+        return afternoon;
+      }
+      else {
+        return morning;
+      }
   }
-  else if (hourNow >= 0) {
-    greeting = 'Good Morning';
+
+  //Adds a unique background and greeting message based
+  //on the current time of day.
+  function greeting(){
+    document.querySelector('body.home').className = currentTime().background;
+    document.getElementById('greeting').textContent = "Why, Good " + currentTime().greeting;
   }
-  else {
-    greeting = 'Welcome';
-  }
-
-  document.write(greeting);
-
-
-//bool
-// var trueValue;
-// var falseValue;
-//
-// trueValue = true;
-// falseValue = false;
-//
-// var elTrue = document.getElementById('replace');
-// elTrue.className = trueValue;
-//
-//
-// var elFalse = document.getElementById('alsoReplace');
-// elFalse.className = falseValue;
-
-// replace
-// var newText = "This is the New text!!!!!!!";
-// var myVariable = document.getElementById ('replace');
-// myVariable.textContent = newText;
-//
-// var alsoMyVariable = document.getElementById ('replaceAlso');
-// alsoMyVariable.textContent = newText;
+  greeting();
+}());

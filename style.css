@@ -52,12 +52,28 @@ a:hover{
 
 
 /*Home***********************************************/
-body.home{
+body.homeMorning{
     background-repeat:no-repeat;
     background-size: cover;
-    background-image: url(images/blueCity.jpeg);
+    background-image: url(images/whiteCubes.png);
     background-color: black;
 }
+
+body.homeAfternoon{
+background-repeat:no-repeat;
+background-size: cover;
+background-image: url(images/coffee.jpg);
+background-color: black;
+}
+
+body.homeEvening{
+background-repeat:no-repeat;
+background-size: cover;
+background-image: url(images/blueCity.jpeg);
+background-color: black;
+}
+
+
 
 .home_text{
   font-size: 32px;
