@@ -135,13 +135,14 @@ body.experience{
   background-color: white;
 }
 
-/*Contact*******************************************************************/
-/* body.contact{
-  background-repeat: repeat;
+/*Awesomeness*******************************************************************/
+body.awesomeness{
+  /* background-repeat: repeat;
   background-size:contain;
-  background-image: url(images/whiteCubes.png);
+  background-image: url(images/whiteCubes.png); */
   background-color: white;
-} */
+  color: black;
+}
 
 
 
@@ -238,7 +239,28 @@ body.experience{
     text-decoration: none;
   }
 
-  body.home{
+  /* body.home{
+    background-repeat:repeat;
+    background-size: cover;
+    background-image: url(images/whiteCubes.png);
+    background-color: white;
+  } */
+
+  body.homeMorning{
+    background-repeat:repeat;
+    background-size: cover;
+    background-image: url(images/whiteCubes.png);
+    background-color: white;
+  }
+
+  body.homeAfternoon{
+    background-repeat:repeat;
+    background-size: cover;
+    background-image: url(images/whiteCubes.png);
+    background-color: white;
+  }
+
+  body.homeEvening{
     background-repeat:repeat;
     background-size: cover;
     background-image: url(images/whiteCubes.png);
@@ -293,23 +315,3 @@ body.experience{
      text-shadow: none;
    }
  }
-
-
-
-
-
-
-///////////////////
-body.contact{
-  background-repeat:repeat;
-  background-size: cover;
-  background-image: url(images/coffee.jpg);
-  background-color: black;
-}
-
-.top{
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(images/coffee.jpg);
-  background-color: white;
-}
