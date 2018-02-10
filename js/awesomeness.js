@@ -35,9 +35,22 @@
 
 //Appends to the list using an Event Listener
 var appendList = document.getElementById('newItemSub');
-appendList.addEventListener('click', append);
+ if (appendList.addEventListener) {
+   appendList.addEventListener('click', append, false);
+ }
+  //Internet Explorer Fallback
+  else {
+   appendList.attachEvent('onclick', append);
+ }
+
 
 //Removes from the list using an Event Listener
 var removeList = document.getElementById('removeItemSub');
-removeList.addEventListener('click', remove);
+if (removeList.addEventListener) {
+  removeList.addEventListener('click', remove, false);
+}
+  //Internet Explorer Fallback
+  else {
+    removeList.attachEvent('onclick', remove);
+  }
 }());

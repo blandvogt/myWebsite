@@ -26,35 +26,44 @@
             <ul class="nav navbar-nav">
               <li class="menu"><a href="about.html">About</a></li>
               <li class="menu"><a href="experience.html">Experience</a></li>
-              <li class="menu"><a href="awesomeness.html">Awesomeness</a></li>
+              <li class="menu current"><a href="awesomeness.html">Awesomeness</a></li>
             </ul>
         </div>
       </div>
     </nav>
 
-    <!-- <div class = "poem">
-        //do something with a poem or story exerpt
-        //Madlibs with Casey At The Bat?
-    </div> -->
+    <div class="container">
+          <div class="title_awe">
+            The purpose of this page is to show off some of the awesome web apps that I build.
+            There isn't much here right now, but check back every once in a while to see an update!
+          </div>
 
+          <h2>List</h2>
+          <p>This is app allows a user to create and edit a list of items.
+            It uses an Event Listener to manipulate the Document Object Model.
+            It also incorporates fallback for incompatible Internet Explorer browsers.</p>
 
+          <div class="row">
+          <div class="column left_even">
+            <div>
+                <input type="text" name="newItem" id="newItem"/>
+                <button id="newItemSub">Enter Item</button>
+            </div>
+            <br>
+            <div>
+                <input type="text" name="removeItem" id="removeItem"/>
+                <button id="removeItemSub">Remove Line</button> (Enter Line #)
+            </div>
+          </div>
+          <div class="column right_even">
+            <div>
+              Item List:
+              <ol id="list">
+              </ol>
+            </div>
+          </div>
+        </div>
 
-    <div>
-      <div>
-          <input type="text" name="newItem" id="newItem"/>
-          <button id="newItemSub">Submit Item</button>
-      </div>
-
-      <div>
-          <input type="text" name="removeItem" id="removeItem"/>
-          <button id="removeItemSub">Remove Item</button>
-      </div>
-
-      <div>
-        <ol id="list">
-          <li>Item 1</li>
-        </ol>
-      <div>
     </div>
 
     <script src="../js/awesomeness.js"></script>

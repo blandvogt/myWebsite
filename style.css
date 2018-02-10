@@ -5,8 +5,8 @@
 .navbar-brand{
   font-size: 40px;
   padding-top: 37px;
-  color: orange !important;
-  /* color: #2980B9 !important; */
+  /* color: orange !important; */
+  color: #2980B9 !important;
   /*font-family: Copperplate, "Copperplate Gothic Light", fantasy;*/
   font-family: Century Gothic;
 }
@@ -39,7 +39,7 @@ ul.nav a:hover {
 /*Extend nav*/
 .navbar-inverse{
   padding-bottom: 5px;
-  opacity: 0.9;
+  /* opacity: 0.9; */
 }
 
 /*Underline Current*/
@@ -50,26 +50,40 @@ a:hover{
   text-decoration: none;
 }
 
+/* General */
+.container{
+  font-family: Georgia;
+  margin-top: 30px;
+  /* background-color: white; */
+  opacity: 0.9;
+}
+
+body{
+    font-size: 20px;
+    color: black;
+    text-align: justify;
+}
+
 
 /*Home***********************************************/
 body.homeMorning{
     background-repeat:no-repeat;
     background-size: cover;
-    background-image: url(images/whiteCubes.png);
+    background-image: url(images/background_morning.jpeg);
     background-color: black;
 }
 
 body.homeAfternoon{
 background-repeat:no-repeat;
 background-size: cover;
-background-image: url(images/coffee.jpg);
+background-image: url(images/afternoon_park.jpg);
 background-color: black;
 }
 
 body.homeEvening{
 background-repeat:no-repeat;
 background-size: cover;
-background-image: url(images/blueCity.jpeg);
+background-image: url(images/evening_city.jpg);
 background-color: black;
 }
 
@@ -94,7 +108,7 @@ background-color: black;
  }
 
 .resume{
-  color: orange;
+  color: #2980B9;
 }
 
 .resume:hover{
@@ -103,48 +117,155 @@ background-color: black;
 
 /*About***********************************************/
 body.about{
-  background-repeat:no-repeat;
-  background-size: cover;
-  background-image: url(images/whiteCubes.png);
-  background-color: black;
+  background-repeat:repeat;
+  background-size: auto;
+  /* background-image: url(images/whiteCubes.png); */
+  background-color: white;
 }
 
-.container_about{
+.column {
+  float: left;
+
+}
+
+.left_even {
+  width: 50%;
+
+}
+
+.right_even {
+  width: 50%;
+}
+
+.title_about{
+  border-bottom: 1px solid black;
+  /* font-style: italic; */
+  color: turquoise;
+}
+
+/* .container_about{
   font-family: Georgia;
-}
+  margin: 30px 80px 30px 80px;
+} */
 
-.about_text{
+/* .about_text{
   font-size: 25px;
-  margin: 30px 80px 30px 30px;
   color: black;
   text-align: justify;
-}
+} */
 
 .myPic{
-  width: 300px;
-  float: left;
-  margin: 10px 30px 15px 80px;
+  width: 250px;
+  float: right;
+  margin: 8px 0px 40px 20px;
   border: 2px solid black;
 }
 
+/* .column_left{
+  float:left;
+  width: 50%;
+  padding-right: 20px;
+}
+
+.column_right{
+  float:right;
+  width: 50%;
+  padding-left: 20px;
+} */
+
 /*Experience********************************************************************/
 body.experience{
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(images/coffee.jpg);
+  background-repeat: repeat;
+  background-size: auto;
+  /* background-image: url(images/whiteCubes.png); */
   background-color: white;
 }
 
+/* .box{
+  margin-bottom: 20px;
+  opacity: 0.9;
+  padding: 1px 10px 1px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: white;
+} */
+
+/* .sub-box{
+  margin-bottom: 40px;
+  float: right;
+  width: 60%;
+} */
+
+.event-title{
+  font-weight: bold;
+  font-style: italic;
+  margin-left: 20px;
+}
+
+h4{
+  margin-left: 20px;
+}
+
+.title_exp{
+  color: orange;
+  /* margin-bottom: 50px; */
+}
+
+/* #work{
+  background-color: beige;
+  border: 1px solid tan;
+}
+
+#entre{
+  background-color: turquoise;
+  border: 1px solid turquoise;
+}
+
+#lead{
+  background-color: lightblue;
+  border: 1px solid lightblue;
+} */
+
+
+
+
+/* Create two unequal columns that floats next to each other */
+.column {
+    float: left;
+
+}
+
+.left {
+  width: 30%;
+  /* margin-left: 30px; */
+}
+
+.right {
+  width: 70%;
+}
+
+
+
+
 /*Awesomeness*******************************************************************/
 body.awesomeness{
-  /* background-repeat: repeat;
+  background-repeat: repeat;
   background-size:contain;
-  background-image: url(images/whiteCubes.png); */
+  /* background-image: url(images/whiteCubes.png); */
   background-color: white;
   color: black;
 }
 
+.title_awe{
+  border-bottom: 1px solid black;
+  font-style: italic;
+  color: black;
+  font-weight: bold;
+  margin-top: 10px;
+}
 
+.app{
+  margin-top: 50px;
+}
 
 
 /*Screen Sizing******************************************************/
@@ -181,23 +302,10 @@ body.awesomeness{
   /*About***********************************************/
   .about_text{
     font-size: 20px;
-    margin: 0px 30px 0px 30px;
-    color: white;
-    text-align: justify;
-    color: black;
-  }
-  .about_text_large{
-    font-size: 20px;
-    margin: 0px 30px 5px 30px;
     color: black;
     text-align: justify;
   }
-  .about_text_full{
-    font-size: 16px;
-    margin: 0px 30px 30px 30px;
-    color: black;
-    text-align: justify;
-  }
+
 
   .myPic{
     width: 150px;
@@ -275,10 +383,8 @@ body.awesomeness{
 
   .about_text{
     font-size: 17px;
-    margin: 30px 30px 30px 30px;
     color: black;
     text-align: justify;
-    color: black;
   }
 
   body.about{
