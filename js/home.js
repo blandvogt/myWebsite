@@ -32,30 +32,8 @@
 
   //Adds a unique background and greeting message based
   //on the current time of day.
-  function greeting(){
-    document.querySelector('body.home').className = currentTime().background;
-    document.getElementById('greeting').textContent = "Why, Good " + currentTime().greeting;
-  }
-greeting();
+    $('body.home').addClass(currentTime().background);
+    $('#greeting').text("Why, Good " + currentTime().greeting).hide().delay(2500).fadeIn(3000);
+    //Fades in the text beneath the greeting.
+    $('.home_text').hide().delay(3500).fadeIn(3000);
 }());
-
-
-
-
-
-
-// document.write("hi there");
-
-// var item = document.getElementById('list');
-
-
-
-
-// }());
-
-
-
-
-
-
-// document.querySelector('a.navbar-brand').innerHTML = "Elon Musk";
